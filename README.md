@@ -1,6 +1,9 @@
 # touch-t
 
-This is a simple library for creating files with timestamps.
+This is a simple library for creating files with timestamps in the current working directory.
+
+### Installation
+``` npm install -g touch-t```
 
 ### Usage
 Entering...

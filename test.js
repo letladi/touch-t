@@ -1,6 +1,8 @@
 'use strict';
 
-let Timestamper = require('./timestamper.js').Timestamper,
+let lib = require('./lib'),
+    Timestamper = lib.Timestamper,
+    touch = lib.touch,
     mocha = require('mocha'),
     should = require('should'),
     fs = require('fs');
@@ -29,7 +31,7 @@ describe("TimeStamp", ()=> {
         stampedName = timestamper.stampedNames(fileName);
       (/\d{14}\_\w+/.test(stampedName)).should.be.true();
     });
-    it('should return an array of timestamped file names if given an array of file names', ()=> {
+    it('should return an array of timestamped file names if given more than one name', ()=> {
       let timestamper = new Timestamper(),
           fileName1 = 'temp-file1',
           fileName2 = 'temp-file2',
@@ -46,9 +48,4 @@ describe("TimeStamp", ()=> {
       });
     });
   });
-
-});
-
-describe('touch-t', ()=> {
-  it('should create a file')
 });
