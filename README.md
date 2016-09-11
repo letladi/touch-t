@@ -20,3 +20,5 @@ should create files that look as follows;
 
 ### License
 MIT
+
+[![Build Status](https://travis-ci.org/Letladi/touch-t.svg?branch=master)](https://travis-ci.org/Letladi/touch-t)
