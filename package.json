@@ -1,0 +1,16 @@
+{
+  "name": "touch-t",
+  "version": "1.0.0",
+  "description": "Create files with timestamps",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node ."
+  },
+  "keywords": [
+    "file",
+    "create",
+    "touch"
+  ],
+  "author": "Letladi Sebesho",
+  "license": "MIT"
+}
