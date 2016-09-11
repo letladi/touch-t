@@ -2,7 +2,6 @@
 
 let lib = require('./lib'),
     Timestamper = lib.Timestamper,
-    touch = lib.touch,
     mocha = require('mocha'),
     should = require('should'),
     fs = require('fs');
