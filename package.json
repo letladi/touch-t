@@ -4,7 +4,7 @@
   "description": "Create files with timestamps",
   "main": "index.js",
   "bin": {
-    "touch-t": "./index.js"
+    "touch-t": "./script"
   },
   "scripts": {
     "test": "mocha test.js"
