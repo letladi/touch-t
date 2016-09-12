@@ -23,5 +23,5 @@
   "engines": {
     "node": ">=4.2.4"
   },
-  "dependencies": {}
+  "repository": "https://github.com/letladi/touch-t"
 }
