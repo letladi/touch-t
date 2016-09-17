@@ -6,8 +6,8 @@ let lib = require('./lib'),
     should = require('should'),
     fs = require('fs');
 
-describe("TimeStamp", ()=> {
-  describe("#timeStamp", ()=> {
+describe("Timestamper", ()=> {
+  describe("#timestamp", ()=> {
     it('should return a timestamp of the given date', ()=> {
       let timestamper = new Timestamper(),
           date1 = new Date('2016-11-11T12:19:37.000Z'),
@@ -28,7 +28,7 @@ describe("TimeStamp", ()=> {
       let timestamper = new Timestamper(),
         fileName = 'temp-file',
         stampedName = timestamper.stampedNames(fileName);
-      (/\d{14}\_\w+/.test(stampedName)).should.be.true();
+      (/^\d{14}\_\w+/.test(stampedName)).should.be.true();
     });
     it('should return an array of timestamped file names if given more than one name', ()=> {
       let timestamper = new Timestamper(),
